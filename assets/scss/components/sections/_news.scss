@@ -41,10 +41,15 @@
 
 .newItem{
     text-align: left;
+    text-decoration: none !important;
 }
 
 .newImg{
     overflow: hidden;
+    height: 22.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     img{
         width: 100%;
@@ -67,6 +72,7 @@
         align-items: center;
         color: $white-color;
         font-size: 1.4rem;
+        text-align: center;
     }
 
     .newTxt{
@@ -80,5 +86,24 @@
         p{
             font-size: 1.6rem;
         }
+    }
+}
+
+#NewsList{
+    .newInfo{ 
+        .newTxt{
+            color: $nav-color;
+
+            p{
+                color: $nav-color;
+            }
+        }
+    }
+}
+
+#NewsDetails{
+    p{
+        font-size: 1.8rem;
+        color: $nav-color;
     }
 }
